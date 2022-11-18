@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  width: 352px;
+  padding: 0 1.5rem;
+  margin: 5rem auto 0;
+
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: 400px;
-  padding: 0 2rem;
-  margin: 2rem auto 0;
 
   .icon {
     background: rgba(0, 0, 0, .15);

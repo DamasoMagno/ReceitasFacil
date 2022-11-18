@@ -3,7 +3,13 @@ import * as Dialog from "@radix-ui/react-alert-dialog";
 
 import { Button } from "../../Button";
 
-import { Overlay, Content, Title, Description, Footer } from "./styles";
+import { 
+  Overlay, 
+  Content, 
+  Title, 
+  Description, 
+  Footer 
+} from "./styles";
 
 interface AlertDialogProps {
   children: ReactNode;

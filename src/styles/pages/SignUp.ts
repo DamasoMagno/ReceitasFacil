@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  width: 352px;
+  padding: 0 1.5rem;
+  margin: 5rem auto 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 368px;
-  padding: 0 1rem;
-  margin: 0 auto;
 
   .logo {
     display: flex;
@@ -28,7 +28,7 @@ export const Container = styled.div`
     text-decoration: none;
     color: ${props => props.theme["--orange-900"]};
     font-family: 'Inter', sans-serif;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-size: 1rem;
   }
 `;

@@ -5,7 +5,7 @@ export const Recipe = styled.main`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: flex-start;
-  gap: 10rem;
+  gap: 8rem;
   padding: 0 1rem;
   max-width: 1129px;
   margin: 2rem auto 2rem;
@@ -25,7 +25,8 @@ export const Recipe = styled.main`
 
     button {
       margin-top: 2rem;
-      align-self: flex-start;
+      max-width: 350px;
+      width: 100%;
     }
     
     div:has(.input):not(:last-of-type) {
@@ -88,11 +89,11 @@ export const Ingredients = styled.div`
   }
 
   .ingredient {
-    margin-bottom: .5rem;
+    margin-bottom: .85rem;
     display: grid;
-    gap: .5rem;
+    gap: .4rem;
 
-    @media(min-width: 728px){
+    @media(min-width: 450px){
       grid-template-columns: 1fr .85fr;
     }
   }
@@ -100,6 +101,6 @@ export const Ingredients = styled.div`
   .measurements {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: .5rem;
+    gap: .25rem;
   }
 `;

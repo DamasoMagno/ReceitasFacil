@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 100vh;
-  width: 368px;
-  padding: 0 1rem;
-  margin: 0 auto;
+  width: 352px;
+  padding: 0 1.5rem;
+  margin: 5rem auto 0;
 
   display: flex;
   flex-direction: column;
@@ -33,7 +32,7 @@ export const Container = styled.div`
     text-decoration: none;
     color: ${props => props.theme["--orange-900"]};
     font-family: "Roboto", sans-serif;
-    margin: 1.25rem 0 8rem;
+    margin: 1.25rem 0 5rem;
   }
 `;
 
@@ -49,8 +48,15 @@ export const Form = styled.form`
   a {
     align-self: flex-end;
     text-decoration: none;
-    color: ${props => props.theme["--orange-900"]};
-    margin: .85rem 0 1.25rem;
+    color: ${props => props.theme["--black"]};
+    margin: .85rem 0 1.5rem;
     font-family: 'Inter', sans-serif;
+    font-size: .85rem;
+
+    transition: color .25s;
+
+    &:hover {
+      color: ${props => props.theme["--orange-900"]};
+    }
   }
 `;

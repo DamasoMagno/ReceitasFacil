@@ -35,7 +35,8 @@ export const Description = styled(AlertDialog.Description)`
 `;
 
 export  const Footer = styled.footer`
-  width: 60%;
+  max-width: 250px;
+  width: 80%;
   margin-left: auto;
   
   display: flex;

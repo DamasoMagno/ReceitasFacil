@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Hamburger } from "phosphor-react";
+import { Hamburger, List, MagnifyingGlass } from "phosphor-react";
 
 import { Input } from "../Input";
 import { Avatar } from "../Radix/Avatar";
@@ -16,18 +16,23 @@ export function Header() {
         </Link>
 
         <Input placeholder="Encontrar Receitas">
-          <Hamburger />
+          <MagnifyingGlass />
         </Input>
 
         <nav>
           <div className="pages">
             <Link href="#">Inicio</Link>
-            <Link href="#">Receitas</Link>
+            <Link href="/recipes">Receitas</Link>
           </div>
 
-          <Link href="/signIn">
-            <Avatar src="https://github.com/DamasoMagno.png" />
-          </Link>
+          <div className="menu">
+            <button>
+              <List />
+            </button>
+            <Link href="/signIn">
+              <Avatar src="https://github.com/DamasoMagno.png" />
+            </Link>
+          </div>
         </nav>
       </Content>
     </Container>

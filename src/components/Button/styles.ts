@@ -10,7 +10,7 @@ export const Container = styled.button<ButtonProps>`
   width: 100%;
   height: 3rem;
   border-radius: 8px;
-  font-size: 1.15rem;
+  font-size: 1rem;
   border: 1px solid transparent;
   cursor: pointer;
   background: ${props => props.theme['--red-700']};

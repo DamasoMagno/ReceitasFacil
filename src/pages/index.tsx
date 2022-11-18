@@ -5,11 +5,7 @@ import { Button } from "../components/Button";
 import { Header } from "../components/Header";
 import { AlertDialog } from "../components/Radix/AlertDialog";
 
-import {
-  Recipe,
-  CoverImage,
-  Ingredients,
-} from "../styles/pages/RegisterRecipe";
+import { Recipe, CoverImage, Ingredients } from "../styles/pages/RegisterRecipe";
 
 export default function registerRecipe() {
   return (

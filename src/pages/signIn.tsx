@@ -29,13 +29,13 @@ export default function signIn() {
           <Lock />
         </Input>
 
-        <Link href="/forgotPassword">esqueceu a senha?</Link>
+        <Link href="/forgotPassword">Esqueceu a senha?</Link>
 
         <Button variant="ghost">Login</Button>
       </Form>
 
       <Link href="/signUp" className="signUp">
-        Criar Conta <SignIn />
+        Criar conta <SignIn />
       </Link>
 
       <Button>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.header`
   background-color: ${props => props.theme['--white']};
@@ -40,6 +40,27 @@ export const Content = styled.div`
 
         &:hover {
           color: ${props => props.theme['--orange-900']}
+        }
+      }
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      button {
+        background-color: transparent;
+        border: 0;
+        font-size: 1.5rem;
+        color: ${props => props.theme["--black"]};
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media(min-width: 728px){
+          display: none;
         }
       }
     }
